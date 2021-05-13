@@ -14,7 +14,7 @@ import javax.persistence.Table;
 import javax.persistence.Id;
 
 @Entity
-@Table(name="DiagnosticCenter1")
+@Table(name = "DiagnosticCenter1")
 public class DiagnosticCenter implements Serializable {
 	private static final long serialVersionUID = 1L;
 	@Id
@@ -26,28 +26,36 @@ public class DiagnosticCenter implements Serializable {
 	private String address;
 	private String contactEmail;
 	private String servicesOffered;
-	//private Set<DiagnosticTest> tests = new HashSet<>();
+
+	// private Set<DiagnosticTest> tests = new HashSet<>();
 	public int getId() {
 		return id;
 	}
+
 	public void setId(int id) {
 		this.id = id;
 	}
+
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
+
 	public String getContactNo() {
 		return contactNo;
 	}
+
 	public void setContactNo(String contactNo) {
 		this.contactNo = contactNo;
 	}
+
 	public DiagnosticCenter() {
 		super();
 	}
+
 	public DiagnosticCenter(int id, String name, String contactNo, String address, String contactEmail,
 			String servicesOffered, Appointment apointment) {
 		super();
@@ -58,30 +66,37 @@ public class DiagnosticCenter implements Serializable {
 		this.contactEmail = contactEmail;
 		this.servicesOffered = servicesOffered;
 	}
+
 	@Override
 	public String toString() {
 		return "DiagnosticCenter [id=" + id + ", name=" + name + ", contactNo=" + contactNo + ", address=" + address
 				+ ", contactEmail=" + contactEmail + ", servicesOffered=" + servicesOffered + "]";
 	}
+
 	public String getAddress() {
 		return address;
 	}
+
 	public void setAddress(String address) {
 		this.address = address;
 	}
+
 	public String getContactEmail() {
 		return contactEmail;
 	}
+
 	public void setContactEmail(String contactEmail) {
 		this.contactEmail = contactEmail;
 	}
+
 	public String getServicesOffered() {
 		return servicesOffered;
 	}
+
 	public void setServicesOffered(String servicesOffered) {
 		this.servicesOffered = servicesOffered;
 	}
-	
+
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}

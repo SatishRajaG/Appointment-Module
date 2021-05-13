@@ -9,12 +9,10 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import com.cg.entities.Appointment;
+
 @Repository
-public interface AppointmentRepository extends JpaRepository<Appointment,Integer> {
+public interface AppointmentRepository extends JpaRepository<Appointment, Integer> {
 
 	public Appointment findByAppointmentid(int appointmentid);
 
-	
-	
-	
 }

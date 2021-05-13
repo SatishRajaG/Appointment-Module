@@ -28,7 +28,7 @@ public class AppointmentControl {
 	@Autowired
 	IAppointmentService appointmentservice;
 	Logger logger = LoggerFactory.getLogger(this.getClass());
-
+	
 	@GetMapping("/user")
 	public List<Appointment> findUser() {
 		logger.info("called find user method()");

@@ -36,11 +36,11 @@ public class Appointment {
 	private LocalDate appointmentdate;
 	@Column(name = "approvalstatus", nullable = true)
 	private String approvalstatus;
-	@OneToMany(mappedBy="appointment",cascade=CascadeType.ALL)
+	@OneToMany(mappedBy = "appointment", cascade = CascadeType.ALL)
 	@JsonIgnore
 	private Set<TestResult> testResult;
 	@OneToOne
-	@JoinColumn(name="id")
+	@JoinColumn(name = "id")
 	private DiagnosticCenter diagnosticCenter;
 
 	public Set<TestResult> getTestResult() {
@@ -129,5 +129,4 @@ public class Appointment {
 				+ ", appointmentid=" + appointmentid + ", patient=" + patient + "]";
 	}
 
-	
 }

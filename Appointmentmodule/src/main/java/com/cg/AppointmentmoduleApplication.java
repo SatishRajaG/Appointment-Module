@@ -8,6 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class AppointmentmoduleApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(AppointmentmoduleApplication.class, args);
 	}
 
